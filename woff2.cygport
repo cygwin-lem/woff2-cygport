@@ -3,7 +3,7 @@ inherit cmake
 
 NAME="woff2"
 VERSION="1.0.2p4"
-RELEASE=1
+RELEASE=2
 CATEGORY="Utils"
 SUMMARY="WOFF2 tools"
 DESCRIPTION="Tools for WOFF2 (WOFF File Format 2.0)"
@@ -19,11 +19,11 @@ PATCH_URI="
   00_Install-woff2_-commands-even-if-BUILD_SHARED_LIBS.patch
 "
 
-BUILD_REQUIRES="
-  cmake
-  ninja
-  pkg-config
-  libbrotli-devel
+BUILD_REQUIRES="\
+  cmake\
+  ninja\
+  pkg-config\
+  libbrotli-devel\
 "
 
 abi=1
