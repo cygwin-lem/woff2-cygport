@@ -1,0 +1,12 @@
+category: Utils
+build-depends: cygport 
+  cmake
+  ninja
+  pkg-config
+  libbrotli-devel
+
+sdesc: "WOFF2 tools (utilities)"
+ldesc: "Tools for WOFF2 (WOFF File Format 2.0)"
+skip:
+
+homepage: https://github.com/google/woff2
