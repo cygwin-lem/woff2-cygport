@@ -1,0 +1,5 @@
+category: Utils
+requires: cygwin libgcc1 libstdc++6 libwoff2_1 libbrotlicommon1 libbrotlidec1 libbrotlienc1
+sdesc: "WOFF2 tools (utilities)"
+ldesc: "Tools for WOFF2 (WOFF File Format 2.0)"
+

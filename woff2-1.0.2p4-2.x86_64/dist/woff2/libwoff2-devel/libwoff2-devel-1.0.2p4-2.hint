@@ -1,0 +1,6 @@
+category: Devel Libs Utils
+requires: libbrotli-devel libwoff2_1 pkg-config 
+sdesc: "WOFF2 tools (development)"
+ldesc: "Tools for WOFF2 (WOFF File Format 2.0)"
+external-source: woff2
+

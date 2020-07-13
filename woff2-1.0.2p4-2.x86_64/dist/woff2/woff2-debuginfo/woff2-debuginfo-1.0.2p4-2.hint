@@ -1,0 +1,7 @@
+category: Debug
+requires: cygwin-debuginfo
+external-source: woff2
+sdesc: "Debug info for woff2"
+ldesc: "This package contains files necessary for debugging the
+woff2 package with gdb."
+
