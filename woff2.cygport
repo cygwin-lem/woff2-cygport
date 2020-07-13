@@ -19,11 +19,11 @@ PATCH_URI="
   00_Install-woff2_-commands-even-if-BUILD_SHARED_LIBS.patch
 "
 
-BUILD_REQUIRES="
-  cmake
-  ninja
-  pkg-config
-  libbrotli-devel
+BUILD_REQUIRES="\
+  cmake\
+  ninja\
+  pkg-config\
+  libbrotli-devel\
 "
 
 abi=1
