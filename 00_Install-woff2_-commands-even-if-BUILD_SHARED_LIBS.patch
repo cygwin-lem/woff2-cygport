@@ -1,0 +1,25 @@
+commit c18fc4a02cbf6b269727ffab446cba9c13a45722
+Author: Lemures Lemniscati <lemures.lemniscati@gmail.com>
+Date:   Mon Jul 6 05:00:02 2020 +0900
+
+    Install woff2_* commands even if BUILD_SHARED_LIBS
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 4960af1..60888c8 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -262,12 +262,12 @@ generate_pkg_config ("${CMAKE_CURRENT_BINARY_DIR}/libwoff2enc.pc"
+   LIBRARIES woff2enc)
+ 
+ # Installation
+-if (NOT BUILD_SHARED_LIBS)
++#if (NOT BUILD_SHARED_LIBS)
+   install(
+     TARGETS woff2_decompress woff2_compress woff2_info
+     RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+   )
+-endif()
++#endif()
+ 
+ install(
+   TARGETS woff2common woff2dec woff2enc

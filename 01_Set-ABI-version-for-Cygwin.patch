@@ -1,0 +1,25 @@
+commit 2b82909beb5444cc0d82f203f2fdad28835b11ac
+Author: Lemures Lemniscati <lemures.lemniscati@gmail.com>
+Date:   Mon Jul 6 05:00:01 2020 +0900
+
+    Set ABI version for Cygwin
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ecfbb83..4960af1 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,3 +1,5 @@
++set(WOFF2_CYGWIN_ABI 1)
++
+ # Copyright 2017 Igalia S.L. All Rights Reserved.
+ #
+ # Distributed under MIT license.
+@@ -98,7 +100,7 @@ target_link_libraries(woff2_info woff2common)
+ 
+ foreach(lib woff2common woff2dec woff2enc)
+   set_target_properties(${lib} PROPERTIES
+-    SOVERSION ${WOFF2_VERSION}
++    SOVERSION ${WOFF2_CYGWIN_ABI}
+     VERSION ${WOFF2_VERSION}
+     POSITION_INDEPENDENT_CODE TRUE)
+ endforeach()
